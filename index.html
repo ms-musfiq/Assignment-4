@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blue Ocean Bangla</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <section id="welcome">
+            <!--Header and Menu Section-->
+            <header class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a class="active" href="#">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!--Booking Section-->
+            <main class="main-content container">
+
+                <div class="booking-content">
+                    <h1>Blue Ocean Bangla</h1>
+                    <p>Bangladesh, an unspoiled paradise of South-East Asian destinations in the lap of Himalayas, is enriched with the longest sea beach in the world Cox's Bazar, mighty mangrove woodland namely Sundarbans, panoramic landscape, blue-green scenic beauty and multifarious cultures in tribal life. The exclusive combination of flora, fauna and climate expands its beauty to the pinnacle. It prides for the vibrant culture, heritage and hospitality. It owns an incredible.</p>
+                </div>
+
+                <div class="booking-form">
+
+                    <h3>Book Ocean Time</h3>
+                    
+                    <div class="input-group">
+                        <label for="">Flying From</label>
+                        <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="">Flying To</label>
+                        <input class="inp-style" type="text" name="" placeholder="New York, United States">
+                    </div>
+
+                    <div class="inputs">
+                        <div class="input-group">
+                            <label for="">Departure</label>
+                            <input class="inp-style" type="date" name="">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Return</label>
+                            <input class="inp-style" type="date" name="">
+                        </div>
+                    </div>
+                    
+                    <div class="input-group f-class">
+                        <div>
+                            <label for="">First Class ($150)</label>
+                            <input id="first-class-count" class="inp-style inp-width" type="" name="" value="0">
+                        </div>
+                        <div class="plus-minus-btn">
+                            <div class="plus">
+                                <button id="first-class-plus-increase" class="btn btn-default"><i
+                                        class="fas fa-plus"></i></button>
+                            </div>
+                            <div class="minus">
+                                <button id="first-class-minus-decrease" class="btn btn-default"><i
+                                        class="fas fa-minus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group f-class">
+                        <div>
+                            <label for="">Economy ($100)</label>
+                            <input id="economy-count" class="inp-style inp-width" type="" name="" value="0">
+                        </div>
+                        <div class="plus-minus-btn">
+                            <div class="plus">
+                                <button id="economy-plus-increase" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                            </div>
+                            <div class="minus">
+                                <button id="economy-minus-decrease" class="btn btn-default"><i
+                                        class="fas fa-minus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculations">
+                        <div class="amount">
+                            <div class="left">
+                                <p>Subtotal</p>
+                            </div>
+                            <div class="right">
+                                <p>$<span id="subTotalAmount">0</span></p>
+                            </div>
+                        </div>
+
+                        <div class="amount">
+                            <div class="left">
+                                <p>Charge 10% VAT</p>
+                            </div>
+                            <div class="right">
+                                <p>$<span id="vat">0</span></p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="amount">
+                            <div class="left">
+                                <h4>Total</h4>
+                            </div>
+                            <div class="right">
+                                <p>$<span id="total">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button id="book-now" class="btn-style">Book Now</button>
+                    </div>
+                    
+                </div>
+               
+            </main>
+
+        </section>
+
+        <section id="book-now-area" class="container">
+
+            <h2>Thank for choosing our service, Stay with Blue Ocean Bangla.</h2>
+            <h3>Receipt details:</h3>
+
+            <table class="table table-striped center">
+                <thead>
+                    <tr>
+                        <th scope="col">Ticket Category</th>
+                        <th scope="col">Total Ticket</th>
+                        <th scope="col">Total Amount</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">First Class</th>
+                        <td><p>$ <span id="first-1">0</span></p></td>
+                        <td><p>$ <span id="first-2">0</span></p></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Economy</th>
+                        <td><p>$ <span id="second-1">0</span></p></td>
+                        <td><p>$ <span id="second-2">0</span></p></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>VAT=</th>
+                        <th>$<span id="total-vat">0</span></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Total=</th>
+                        <th>$<span id="total-amount">0</span></th>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+
+
+
+
+        <!-- All script start form here -->
+
+        <script>       
+
+            document.getElementById('first-class-plus-increase').addEventListener('click', function () {
+                firstClassChange(true);
+                totalCost();
+            })
+            document.getElementById('first-class-minus-decrease').addEventListener('click', function () {
+                firstClassChange(false);
+                totalCost();
+            })
+            document.getElementById('economy-plus-increase').addEventListener('click', function () {
+                economyChange(true);
+                totalCost();
+            })
+            document.getElementById('economy-minus-decrease').addEventListener('click', function () {
+                economyChange(false);
+                totalCost();
+            })
+
+
+            function economyChange(isIncrease) {
+                const economyInput = document.getElementById('economy-count');
+                const economyCount = parseInt(economyInput.value);
+                let economyNewCount = economyCount;
+                if (isIncrease == true) {
+                    economyNewCount = economyCount + 1;
+                }
+                if (isIncrease == false && economyCount > 0) {
+                    economyNewCount = economyCount - 1;
+                }
+                economyInput.value = economyNewCount;
+            }
+
+
+            function firstClassChange(isIncrease) {
+                const firstClassInput = document.getElementById('first-class-count');
+                const firstClassCount = parseInt(firstClassInput.value);
+                let firstClassNewCount = firstClassCount;
+                if (isIncrease == true) {
+                    firstClassNewCount = firstClassCount + 1;
+                }
+                if (isIncrease == false && firstClassCount > 0) {
+                    firstClassNewCount = firstClassCount - 1;
+                }
+                firstClassInput.value = firstClassNewCount;
+            }
+
+
+
+            //total cost
+
+            function totalCost() {
+
+                const firstClassInput = document.getElementById('first-class-count');
+                const firstClassCount = parseInt(firstClassInput.value);
+
+                const economyInput = document.getElementById('economy-count');
+                const economyCount = parseInt(economyInput.value);
+
+                const subTotal = firstClassCount * 150 + economyCount * 100;
+
+                document.getElementById('subTotalAmount').innerText = subTotal;
+
+                //vat calculation
+                const vat = Math.round(subTotal * .1);
+                document.getElementById('vat').innerText = vat;
+
+                //total calculation
+                const Total = subTotal + vat;
+                document.getElementById('total').innerText = Total;
+            }
+
+
+
+                const loginBtn = document.getElementById('book-now');
+                loginBtn.addEventListener('click', function () {
+                const loginArea = document.getElementById('welcome');
+                loginArea.style.display = 'none';
+                const BookNowArea = document.getElementById('book-now-area');
+                document.body.style.backgroundImage = 'none';
+                BookNowArea.style.display = 'block';
+
+
+
+                const firstTicketQty = document.getElementById("first-1").innerText;
+                let firstTicketCount = document.getElementById("first-class-count").value;
+                // const c = b;
+                document.getElementById("first-1").innerText = firstTicketCount;
+
+
+                const firstTicketTotal = document.getElementById("first-2").innerText;
+                let firstTicketId = document.getElementById("first-class-count").value;
+                const d = firstTicketId * 150;
+                // const f = e;
+                document.getElementById("first-2").innerText = d;
+
+                const secondTicketQty = document.getElementById("second-1").innerText;
+                let secondTicketCount = document.getElementById("economy-count").value;
+                // const c = b;
+                document.getElementById("second-1").innerText = secondTicketCount;
+
+                const secondTicketTotal = document.getElementById("second-2").innerText;
+                let secondTicketId = document.getElementById("economy-count").value;
+                const e = secondTicketId * 100;
+                // const f = e;
+                document.getElementById("second-2").innerText = e;
+
+                //vat
+                const totalVat = document.getElementById('total-vat').innerText;
+                let vatFinal = document.getElementById('vat').innerText;
+                document.getElementById('total-vat').innerText = vatFinal; 
+
+                //total
+                const finalTotal = document.getElementById('total-amount').innerText;
+                let amountFinal = document.getElementById('total').innerText;
+                document.getElementById('total-amount').innerText = amountFinal;           
+
+
+            })
+
+        </script>
+
+
+
+        
+
+    </body>
+
+</html>
